@@ -1,0 +1,211 @@
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+    background-color: rgb(253, 251, 251);
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 8%;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /* margin-top: 20%;; */
+    z-index: 100;
+}
+.navbar{
+    text-align: center;
+    margin-top: 15px;
+}
+.navbar a{
+    font-size: x-large;
+    color: gray;
+    text-decoration: none;
+    font-weight: 600;
+    
+    margin-left: 23px;
+
+}
+.navbar a:hover{
+    background: linear-gradient(50deg,#f06,rgb(34, 192, 244));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+a.nav-home.active {
+    background: linear-gradient(50deg,#f06,rgb(34, 192, 244));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+video{
+    height: 150px;
+    margin-left: 45%;
+    margin-top: 10px;
+    border: none;
+}
+.events{
+display: flex;
+overflow-x: scroll;
+}
+
+.events::-webkit-scrollbar{
+display: none;
+}
+.events-container {
+position: relative;
+}
+.dabba{
+height: 350px;
+width: 300px;
+background: transparent;
+/* margin-top: 7%; */
+border: 1px solid rgb(6, 6, 6);
+margin-right: 10px;
+border-radius: 10px;
+padding: 25px;
+margin-bottom: 50px;
+}
+.dabba:hover{
+transform: scale(1.05);
+
+}
+.dabba img{
+height: 300px;
+width: 220px;
+border-radius: 10px;
+}
+.dabba h3{
+color: #ece9e9;
+font-size: 30px;
+margin-top: 15px;
+}
+.dabba a{
+text-decoration: none;
+color: rgb(227, 225, 225);
+}
+.dabba h3{
+text-align: center;
+}
+.dabba button:hover{
+background-color: aquamarine;
+color: black;
+transform: scale(1.2);
+}
+.dabba button{
+color: #ece9e9;
+transition: all 0.3s linear;
+
+}
+.dabba button{
+height: 40px;
+width: 100px;
+background-color: rgb(49, 2, 62);
+border: transparent;
+border-radius: 10px;
+margin-left: 50px;
+
+}
+.fields{
+
+position: absolute;
+display: none;
+position: absolute;
+height: 150px;
+width: 400px;
+left: 50%;
+top:50%;
+transform: translate(-50%,-50%);
+z-index: 1;
+border: 1px solid rgb(10, 10, 10);
+border-radius: 10px;
+background: linear-gradient(rgb(158, 16, 149), rgb(89, 27, 151));
+}
+button{
+height: 50px;
+width: 120px;
+border-radius: 15px;
+margin-top: 20px;
+margin-left: 55px;
+
+}
+.viewdate{
+
+position: absolute;
+display: none;
+position: absolute;
+height: 150px;
+width: 400px;
+left: 50%;
+top:50%;
+transform: translate(-50%,-50%);
+z-index: 1;
+border: 1px solid rgb(10, 10, 10);
+border-radius: 10px;
+background: linear-gradient(rgb(158, 16, 149), rgb(89, 27, 151));
+
+}
+.icons{
+display: flex;
+height: 40px;
+margin-top: 10px;
+background: none;
+margin-left: 30%;
+
+}
+#vi{
+height: 50px;
+width: 70px;
+border-radius: 15px;
+margin-top: 5px;
+margin-left: 43%;
+}
+.viewdes{
+
+position: absolute;
+display: none;
+position: absolute;
+height: 150px;
+width: 400px;
+left: 50%;
+top:50%;
+transform: translate(-50%,-50%);
+z-index: 1;
+border: 1px solid rgb(10, 10, 10);
+border-radius: 10px;
+background: linear-gradient(rgb(158, 16, 149), rgb(89, 27, 151));
+
+}
+.icons1{
+display: flex;
+height: 40px;
+margin-top: 10px;
+background: none;
+margin-left: 25%;
+border: none;
+
+
+}
+#descri{
+background: none;
+border: none;
+border-bottom: 1px solid white;
+color: white;
+}
+#vi2{
+height: 50px;
+width: 70px;
+border-radius: 15px;
+margin-top: 5px;
+margin-left: 43%;
+}
+
+
+
+</style>

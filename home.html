@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/6133dcca2b.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>Photo MEmories</title>
+    <script>
+        $(document).ready(function(){
+            $("#cal").click(function(){
+                $(".fields").fadeIn("slow");
+            })
+        })
+        $(document).ready(function(){
+            $("#close").click(function(){
+                $(".fields").fadeOut("slow");
+            })
+        })
+        $(document).ready(function(){
+            $("#vd").click(function(){
+                $(".viewdate").fadeIn("slow");
+            })
+        })
+        $(document).ready(function(){
+            $("#close1").click(function(){
+                $(".viewdate").fadeOut("slow");
+            })
+        })
+        $(document).ready(function(){
+            $("#des").click(function(){
+                $(".viewdes").fadeIn("slow");
+            })
+        })
+        $(document).ready(function(){
+            $("#close2").click(function(){
+                $(".viewdes").fadeOut("slow");
+            })
+        })
+        </script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: cursive;
+            background-color: rgb(253, 251, 251);
+        }
+        .header{
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 10px 8%;
+            background: transparent;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            /* margin-top: 20%;; */
+            z-index: 100;
+        }
+        .navbar{
+            text-align: center;
+            margin-top: 15px;
+        }
+        .navbar a{
+            font-size: x-large;
+            color: gray;
+            text-decoration: none;
+            font-weight: 600;
+            
+            margin-left: 23px;
+
+        }
+        .navbar a:hover{
+            background: linear-gradient(50deg,#f06,rgb(34, 192, 244));
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+        }
+        a.nav-home.active {
+            background: linear-gradient(50deg,#f06,rgb(34, 192, 244));
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+        }
+        
+        video{
+            height: 150px;
+            margin-left: 45%;
+            margin-top: 10px;
+            border: none;
+        }
+.events{
+    display: flex;
+    overflow-x: scroll;
+}
+
+.events::-webkit-scrollbar{
+    display: none;
+  }
+        .events-container {
+    position: relative;
+}
+.dabba{
+    height: 350px;
+    width: 300px;
+    background: transparent;
+    /* margin-top: 7%; */
+    border: 1px solid rgb(6, 6, 6);
+    margin-right: 10px;
+    border-radius: 10px;
+    padding: 25px;
+    margin-bottom: 50px;
+}
+.dabba:hover{
+    transform: scale(1.05);
+    
+}
+.dabba img{
+    height: 300px;
+    width: 220px;
+    border-radius: 10px;
+}
+.dabba h3{
+    color: #ece9e9;
+    font-size: 30px;
+    margin-top: 15px;
+}
+.dabba a{
+    text-decoration: none;
+    color: rgb(227, 225, 225);
+}
+.dabba h3{
+    text-align: center;
+}
+.dabba button:hover{
+    background-color: aquamarine;
+    color: black;
+    transform: scale(1.2);
+}
+.dabba button{
+    color: #ece9e9;
+    transition: all 0.3s linear;
+
+}
+.dabba button{
+    height: 40px;
+    width: 100px;
+    background-color: rgb(49, 2, 62);
+    border: transparent;
+    border-radius: 10px;
+    margin-left: 50px;
+
+}
+.fields{
+  
+    position: absolute;
+    display: none;
+    position: absolute;
+    height: 150px;
+    width: 400px;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+    border: 1px solid rgb(10, 10, 10);
+    border-radius: 10px;
+    background: linear-gradient(rgb(158, 16, 149), rgb(89, 27, 151));
+}
+button{
+    height: 50px;
+    width: 120px;
+    border-radius: 15px;
+    margin-top: 20px;
+    margin-left: 55px;
+
+}
+.viewdate{
+    
+    position: absolute;
+    display: none;
+    position: absolute;
+    height: 150px;
+    width: 400px;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+    border: 1px solid rgb(10, 10, 10);
+    border-radius: 10px;
+    background: linear-gradient(rgb(158, 16, 149), rgb(89, 27, 151));
+
+}
+.icons{
+    display: flex;
+    height: 40px;
+    margin-top: 10px;
+    background: none;
+    margin-left: 30%;
+    
+}
+#vi{
+    height: 50px;
+    width: 70px;
+    border-radius: 15px;
+    margin-top: 5px;
+    margin-left: 43%;
+}
+.viewdes{
+    
+    position: absolute;
+    display: none;
+    position: absolute;
+    height: 150px;
+    width: 400px;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+    border: 1px solid rgb(10, 10, 10);
+    border-radius: 10px;
+    background: linear-gradient(rgb(158, 16, 149), rgb(89, 27, 151));
+
+}
+.icons1{
+    display: flex;
+    height: 40px;
+    margin-top: 10px;
+    background: none;
+    margin-left: 25%;
+    border: none;
+   
+    
+}
+#descri{
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    color: white;
+}
+#vi2{
+    height: 50px;
+    width: 70px;
+    border-radius: 15px;
+    margin-top: 5px;
+    margin-left: 43%;
+}
+
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="#" class="nav-home">Home</a>
+            <a href="#" class="nav-home" id="cal">Calendar</a>
+            <a href="#" class="nav-home" id="upload">Upload</a>
+            <!-- <a href="#EDUCATION" class="nav-home"></a> -->
+            <a href="#" class="nav-home">Logout</a>
+        </nav>
+    </header>
+    <video autoplay loop muted plays-inline class="backvideo" src="memo (1).mp4"></video>
+    <div class="events">
+        
+        <div class="dabba">
+            <img src="music.jpg" alt="">
+
+        </div>
+        <div class="dabba">
+            <img src="connection.png" alt="">
+
+        </div>
+    
+        <div class="dabba">
+            <img src="th.jpg" alt="">
+        </div>
+        
+        <div class="dabba">
+            <img src="ramp.jpg" alt="">
+        </div>
+        
+        <div class="dabba">
+            <img src="relay.webp" alt="">
+        </div>
+        <div class="dabba">
+            <img src="fs.jpg" alt="">
+    </div>
+    <div class="dabba">
+        <img src="fs.jpg" alt="">
+</div>
+<div class="dabba">
+    <img src="fs.jpg" alt="">
+</div>
+    </div>
+    <div class="fields">
+        <i  id="close" style="color: white; margin-left: 92%;background: none; font-size: x-large; cursor: pointer;">  X</i>
+        <br>
+        <button id="vd">By Date</button>
+        <button id="des">By Description</button>
+    </div>
+    <div class="viewdate">
+        <i  id="close1" style="color: white; margin-left: 92%;background: none; font-size: x-large; cursor: pointer;">  X</i>
+        <div class="icons">
+             
+            <i style="color: white; background: none; margin-right: 10px; font-size: x-large; margin-top: 5px; "class="fa-solid fa-calendar-days"></i>
+            <input type="date" id="da">
+        </div>
+        <input type="submit" name="" id="vi" value="View">
+    </div>
+    <div class="viewdes">
+        <i  id="close2" style="color: white; margin-left: 92%;background: none; font-size: x-large; cursor: pointer;">  X</i>
+        <div class="icons1">
+            <i style="color: white; background: none; margin-right: 10px; font-size: x-large; margin-top: 5px;" class="fa-solid fa-keyboard"></i>
+           
+            <input type="text" id="descri" placeholder="Enter Description:">
+        </div>
+        <input type="submit" name="" id="vi2" value="View">
+    </div>
+</body>
+</html>

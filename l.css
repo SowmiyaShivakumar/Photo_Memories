@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    background-color: rgb(4, 4, 4);
+}
+.con{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.bubbles{
+    position: relative;
+    display: flex;
+}
+.bubbles span{
+   
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background: #4fc3dc;
+    margin: 0 4px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px #4fc3dc44, 0 0 50px #4fc3dc, 0 0 100px #4fc3dc44;
+    animation: ani 15s linear infinite;
+    animation-duration: calc(125s / var(--i));
+
+}
+.bubbles span:nth-child(even){
+    background: #ff2dff;
+    box-shadow: 0 0 0 10px #ac28a644, 0 0 50px #f07ef6, 0 0 100px #e773e1d6;
+    
+}
+@keyframes ani{
+    0%{
+        transform: translateY(100vh) scale(0);
+    }100%{
+        transform: translateY(-10vh) scale(1);
+    }
+}
+.box{
+    height: 430px;
+    width: 370px;
+    background-color:white;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+.box h1{
+    color: rgb(8, 8, 8);
+    text-align: center;
+    padding: 30px;
+    
+}
+.field{
+    padding-left: 15%;
+   
+}
+.field input{
+    height: 40px;
+    width: 240px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid rgb(11, 11, 11);
+    color: rgb(14, 14, 14);
+    margin-top: 20px;
+}
+
+button{
+    height: 40px;
+    width: 250px;
+    border-radius: 150px;
+    margin-top: 35px;
+    margin-left: 60px;
+    background-color: rgb(42, 41, 43);
+    border: none;
+    transform: all 0.5s linear;
+}
+a{
+    text-decoration: none;
+    color: rgb(240, 237, 237);
+}
+button:hover{
+    background-color: rgb(153, 159, 157);
+    transform: scale(1.05);
+    box-shadow: 5px solid white;
+}
+button:hover a{
+    font-size: 20px;
+}
+.cb{
+    margin-top: 25px;
+    margin-left: 50px;
+    display: flex;
+    color: rgb(1, 1, 1);
+}
+.cb a{
+    color: rgb(15, 15, 15);
+    text-decoration: none;
+    margin-left: 40px;
+}
+.lastline{
+    color: rgb(9, 9, 9);
+    margin-left:  70px ;
+    margin-top: 20px;
+}
+.lastline a{
+    color: rgb(12, 12, 12);
+    text-decoration: none;
+}
